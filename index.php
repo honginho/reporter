@@ -23,17 +23,6 @@ require_once 'footer.php';
 
 /*************函數區**************/
 
-//讀出單一文章
-function show_article($sn)
-{
-    global $db, $smarty;
-
-    $sql    = "SELECT * FROM `article` WHERE `sn`='$sn'";
-    $result = $db->query($sql) or die($db->error);
-    $data   = $result->fetch_assoc();
-    $smarty->assign('article', $data);
-}
-
 //讀出所有文章
 function list_article()
 {

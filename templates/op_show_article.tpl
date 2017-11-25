@@ -1,4 +1,4 @@
-<div class="container">
+<div class="mt-5 container">
     <h1>{$article.title}</h1>
     <p>{$article.content}</p>
     <div class="alert alert-info text-center">
